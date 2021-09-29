@@ -1,0 +1,27 @@
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: linear-gradient(90deg, green, blue);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.avatar:hover {
+    background: linear-gradient(90deg, blue, green);
+}
+.avatar__bg {
+    width: 138px;
+    height: 138px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+.avatar__img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 4px;
+}
