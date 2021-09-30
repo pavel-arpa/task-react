@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import avatar from "../avatar.png"
 
 function ColoredUserpic(props) {
     const [bgColor, setBgColor] = useState({f: props.colors[1], s: props.colors[0]})
@@ -35,7 +34,7 @@ function ColoredUserpic(props) {
                  onMouseEnter={() => setBgColor({f: props.colors[0], s: props.colors[1]})}
                  onMouseLeave={() => setBgColor({f: props.colors[1], s: props.colors[0]})}>
                 <div style={AvatarBg}>
-                    <img style={AvatarImg} src={avatar} alt={"avatar"}/>
+                    <img style={AvatarImg} src={`${props.src}`} alt={"avatar"}/>
                 </div>
             </div>
         </div>
